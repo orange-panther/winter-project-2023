@@ -1,0 +1,88 @@
+body {
+    background-image: url('media/paper-background.jpg');
+}
+
+.navbar a {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    background-image: url('media/paper-background.jpg');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #701c1c;
+    display: flex;
+    flex: row;
+    justify-content: space-evenly;
+    width: 100%;
+    position: sticky;
+    top: 0.5rem;
+}
+
+.navbar a:hover {
+    background-color: #461212;
+}
+
+
+/* home */
+#welcoming {
+    font-family: Garamond;
+    font-size: 190%;
+    text-align: center;
+    padding-top: 0.25rem;
+}
+
+#welcoming-text {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    line-height: 2rem;
+}
+
+.icon {
+    padding-top: 2rem;
+    width: 9rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-meme {
+    padding-top: 5rem;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* hogwarts */
+.video-container {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 0;
+    padding: 2rem;
+
+}
+
+    /* .video-container {
+        position: relative;
+        margin: auto;
+        width: 50%;
+        padding-bottom: 56.25%;
+        height: 0;
+        
+    }
+
+    .video-container iframe {
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+    } */
