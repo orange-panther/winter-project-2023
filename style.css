@@ -1,5 +1,6 @@
 body {
     background-image: url('media/paper-background.jpg');
+    background-repeat: no-repeat;
 }
 
 .navbar a {
