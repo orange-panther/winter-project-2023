@@ -58,7 +58,7 @@ body {
 
 .center-meme {
     padding-top: 5rem;
-    width: 50%;
+    width: 700px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -84,7 +84,7 @@ div.video-container {
 
 }
 
-.grid-item img {
+.grid-item > img {
     width: 75%;
     object-fit: cover;
     display: block;
@@ -97,3 +97,69 @@ div.video-container {
 .grid-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
+
+/* quotes */
+css-slides img {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 28s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    padding-top: 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+css-slides img:nth-child(1){ animation-delay: 0s;}
+css-slides img:nth-child(2){ animation-delay: 4s;}
+css-slides img:nth-child(3){ animation-delay: 8s;}
+css-slides img:nth-child(4){ animation-delay: 12s;}
+css-slides img:nth-child(5){ animation-delay: 16s;}
+css-slides img:nth-child(6){ animation-delay: 20s;}
+css-slides img:nth-child(7){ animation-delay: 24s;}
+
+
+@keyframes fade {
+    0%      { opacity: 0; }
+    7.14%   { opacity: 1; }
+    14.29%  { opacity: 1; }
+    21.43%  { opacity: 0; }
+    100%    { opacity: 0; }
+}
+
+css-slides + p {
+    display: block;
+    text-align: center;
+    font-family: Garamond;
+}
+
+
+div.slideshow{
+    vertical-align: top;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+div.slideshow > div {
+    width: 33.33%;
+    text-wrap: pretty;
+}
+
+div.quotes p{
+    font-family: 'Brush Script MT', serif;
+    font-size: 4.5vh;
+    color:#461212;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+
