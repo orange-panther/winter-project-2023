@@ -38,7 +38,7 @@ body {
     padding-top: 0.25rem;
 }
 
-#welcoming-text {
+.welcoming-text {
     text-align: center;
     font-size: 1.2rem;
     padding-top: 1rem;
@@ -167,25 +167,38 @@ div.house-container img { height: 20vh; }
 /* #endregion */
 
 /* #region meme */
+.greeting {
+    font-family: Garamond;
+    font-weight: bold;
+}
+
+.greeting h1 {
+    color: #461212;
+    font-size: 7vh;
+    text-align: center;
+    padding-top: 0.25rem;
+    padding-top: 2%;
+}
+
 .grid-container {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
-
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(1fr auto);
+    align-items: center;
+    gap: 1% 2%;
 }
 
 .grid-item > img {
-    width: 75%;
-    object-fit: cover;
+    width: 25vw;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0.5rem;
-
+    margin: auto;
+    padding: 0.5rem 0 0.5rem 0;
 }
 
 .grid-item {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+background-color: #91736083;
+border-radius: 10px;
 }
 /* #endregion */
 
