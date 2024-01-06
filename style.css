@@ -6,10 +6,10 @@ body {
 }
 
 
-/* navbar */
+/* #region navbar */
 .navbar a {
     padding: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 2.7vh;
     background-image: url('media/paper-background.jpg');
     background-clip: text;
     -webkit-background-clip: text;
@@ -17,24 +17,21 @@ body {
 }
 
 .navbar {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #701c1c;
+    padding-top: 1vh;
+    padding-bottom: 0.7vh;
+    background-color: #461212;
     display: flex;
     flex: row;
     justify-content: space-evenly;
     width: 100%;
     position: sticky;
     top: 0.5rem;
+    z-index:2;
 }
+/* #endregion */
 
-.navbar a:hover {
-    background-color: #461212;
-}
-
-
-/* home */
-#welcoming {
+/* #region home */
+.welcoming {
     font-family: Garamond;
     font-size: 190%;
     text-align: center;
@@ -63,20 +60,113 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+/* #endregion */
 
-
-/* hogwarts */
-div.video-container {
-    position: relative;
-    align-items: center;
-    justify-items: center;
-    width: 50%;
-    height: 0;
-    padding: 2rem;
-
+/* #region hogwarts */
+#hogwarts-welcome {
+    padding-bottom: 0;
+    color: #461212;
+    font-size: 6vh;
 }
 
-/* meme */
+div.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    z-index: 1;
+}
+
+.hogwarts-video {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 70%;
+    border: none;
+}
+
+.container {
+    border: 1.3px solid #917360;
+    border-radius: 7px;
+    margin: 1rem;
+}
+
+.poem-design {
+    padding: 3% 5% 3% 5%;
+    text-align: center;
+}
+
+.poem-text {
+    font-family: Papyrus;
+    font-weight: bold;
+    font-size: 2.7vh;
+    color: #461212;
+}
+
+.house-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(10vh auto);
+    gap: 5%;
+    padding: 0 5% 2% 5%;
+}
+
+.house {
+    border-radius: 4px;
+    padding: 1rem;
+    vertical-align: center;
+}
+
+.href {
+    color: #451230;
+    text-decoration: none;
+}
+
+img.crest-right { float: right; }
+
+img.crest-left { float: left; }
+
+div.house-container img { height: 20vh; }
+
+#gryffindor {
+    background-color: #ae000079;
+    border: 2px solid #740001;
+}
+
+#hufflepuff {
+    background-color: 	#f0c75e85;
+    border: 2px solid #ecb939;
+}
+
+#ravenclaw {
+    background-color: 	#222f5b85;
+    border: 2px solid 	#0e1a40;
+}
+
+#slytherin {
+    background-color: 	#2a623d83;
+    border: 2px solid #1a472a;
+}
+
+#thumbnail {
+    border-radius: 6px;
+    width: 25vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hogwarts-crest {
+    margin: 3% 0 0 0;
+    width: 20vw;
+}
+/* #endregion */
+
+/* #region meme */
 .grid-container {
     width: 100%;
     display: grid;
@@ -97,8 +187,9 @@ div.video-container {
 .grid-item {
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
+/* #endregion */
 
-/* quotes */
+/* #region quotes */
 css-slides img {
     opacity: 0;
     animation-name: fade;
@@ -138,7 +229,7 @@ css-slides + p {
 }
 
 
-div.slideshow{
+div.flexbox{
     vertical-align: top;
     display: flex;
     flex-direction: row;
@@ -146,12 +237,12 @@ div.slideshow{
     align-items: stretch;
 }
 
-div.slideshow > div {
+div.flexbox > div {
     width: 33.33%;
     text-wrap: pretty;
 }
 
-div.quotes p{
+div.quotes p {
     font-family: 'Brush Script MT', serif;
     font-size: 4.5vh;
     color:#461212;
@@ -160,6 +251,6 @@ div.quotes p{
 .text-right {
     text-align: right;
 }
-
+/* #endregion */
 
 
