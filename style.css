@@ -222,12 +222,11 @@ css-slides img:nth-child(7){ animation-delay: 24s;}
     100%    { opacity: 0; }
 }
 
-css-slides + p {
+.credit {
     display: block;
     text-align: center;
     font-family: Garamond;
 }
-
 
 div.flexbox{
     vertical-align: top;
