@@ -40,7 +40,7 @@ body {
 
 .welcoming-text {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     padding-top: 1rem;
     line-height: 2rem;
 }
@@ -265,4 +265,8 @@ div.quotes p {
 }
 /* #endregion */
 
-
+/* #region characters */
+.head-charac  {
+    border-bottom: solid black;
+}
+/* #endregion */
