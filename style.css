@@ -6,8 +6,10 @@ body {
 }
 
 
+
+
 /* #region navbar */
-.navbar a {
+.my-navbar a {
     padding: 0.5rem;
     font-size: 2.7vh;
     background-image: url('media/paper-background.jpg');
@@ -16,7 +18,8 @@ body {
     color: transparent;
 }
 
-.navbar {
+.my-navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.479);
     padding-top: 1vh;
     padding-bottom: 0.7vh;
     background-color: #461212;
@@ -24,10 +27,15 @@ body {
     flex: row;
     justify-content: space-evenly;
     width: 100%;
-    position: sticky;
     top: 0.5rem;
-    z-index:2;
+    z-index: 2;
+    position: sticky;
 }
+
+/* .image-margin {
+    background-image: url('media/paper-background.jpg');
+    margin: 0;
+} */
 /* #endregion */
 
 /* #region home */
@@ -89,7 +97,7 @@ div.video-container {
     border: none;
 }
 
-.container {
+.my-container {
     border: 1.3px solid #917360;
     border-radius: 7px;
     margin: 1rem;
@@ -268,5 +276,37 @@ div.quotes p {
 /* #region characters */
 .head-charac  {
     border-bottom: solid black;
+}
+
+img.char-img {
+    filter: sepia(50%) drop-shadow(8px 8px 10px black);
+    border-radius: 5%;
+    height: 17vh;
+}
+
+.float-left {
+    float: left;
+    margin-right: 3vw;
+}
+
+.float-right {
+    float: right;
+    margin-left: 3vw;
+}
+
+div.character div {
+    margin: 1rem 0 1rem 0;
+}
+
+article.character > div {
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+#harrys-parents {
+    height: 30vh;
+}
+
+#the-dursleys {
+    height: 23vh;
 }
 /* #endregion */
