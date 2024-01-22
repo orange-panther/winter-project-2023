@@ -6,8 +6,6 @@ body {
 }
 
 
-
-
 /* #region navbar */
 .my-navbar a {
     padding: 0.5rem;
@@ -32,18 +30,15 @@ body {
     position: sticky;
 }
 
-/* .image-margin {
-    background-image: url('media/paper-background.jpg');
-    margin: 0;
-} */
 /* #endregion */
 
 /* #region home */
 .welcoming {
-    font-family: Garamond;
+    font-family: 'Harry Potter', sans-serif;
     font-size: 190%;
     text-align: center;
     padding-top: 0.25rem;
+    
 }
 
 .welcoming-text {
@@ -263,8 +258,9 @@ div.flexbox > div {
 }
 
 div.quotes p {
-    font-family: 'Brush Script MT', serif;
-    font-size: 4.5vh;
+    font-family: 'Little Quotes', sans-serif;
+                                                                                        
+    font-size: 4.7vh;
     color:#461212;
 }
 
